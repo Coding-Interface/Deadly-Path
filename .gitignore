@@ -1,7 +1,0 @@
-# Keystore file
-*.jks
-# Directory
-10000/
-# construct file
-*.c3p
-*.apk
