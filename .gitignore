@@ -1,9 +1,0 @@
-# Keystore file
-*.jks
-cordova-release-sign.txt
-
-# Directory
-100000/
-# construct file and ak files
-*.c3p
-*.apk
