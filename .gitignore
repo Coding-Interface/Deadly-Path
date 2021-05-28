@@ -1,4 +1,4 @@
 # Keystore file
 *.jks
 # Directory
-Builds/cordova build/10000
+10000/
