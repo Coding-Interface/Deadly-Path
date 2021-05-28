@@ -1,0 +1,159 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+	background: #000000;
+	color: white;
+}
+
+html, body, canvas {
+	touch-action: none;
+	touch-action-delay: none;
+}
+
+#notSupportedWrap {
+	margin: 2em auto 1em auto;
+	width: 75%;
+	max-width: 45em;
+	border: 2px solid #aaa;
+	border-radius: 1em;
+	padding: 2em;
+	background-color: #f0f0f0;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	color: black;
+}
+
+#notSupportedTitle {
+	font-size: 1.8em;
+}
+
+.notSupportedMessage {
+	font-size: 1.2em;
+}
+
+.notSupportedMessage em {
+	color: #888;
+}
+
+
+@font-face {
+	font-family: 'grandstander-semibold';
+	src: url('fonts/grandstander-semibold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-semibolditalic';
+	src: url('fonts/grandstander-semibolditalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-thin';
+	src: url('fonts/grandstander-thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-thinitalic';
+	src: url('fonts/grandstander-thinitalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-black';
+	src: url('fonts/grandstander-black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-blackitalic';
+	src: url('fonts/grandstander-blackitalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-bold';
+	src: url('fonts/grandstander-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-bolditalic';
+	src: url('fonts/grandstander-bolditalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-extrabold';
+	src: url('fonts/grandstander-extrabold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-extrabolditalic';
+	src: url('fonts/grandstander-extrabolditalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-extralight';
+	src: url('fonts/grandstander-extralight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-extralightitalic';
+	src: url('fonts/grandstander-extralightitalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-italic';
+	src: url('fonts/grandstander-italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-light';
+	src: url('fonts/grandstander-light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-lightitalic';
+	src: url('fonts/grandstander-lightitalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-medium';
+	src: url('fonts/grandstander-medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-mediumitalic';
+	src: url('fonts/grandstander-mediumitalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'grandstander-regular';
+	src: url('fonts/grandstander-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'sniglet-extrabold';
+	src: url('fonts/sniglet-extrabold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'sniglet-regular';
+	src: url('fonts/sniglet-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'baloo2-regular';
+	src: url('fonts/baloo2-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'baloo2-bold';
+	src: url('fonts/baloo2-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'londrinasketch-regular';
+	src: url('fonts/londrinasketch-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'bubblegumsans-regular';
+	src: url('fonts/bubblegumsans-regular.ttf') format('truetype');
+}
+
