@@ -1,0 +1,1 @@
+cordova run android --release -- --keystore=../codinginterface.jks --storePassword=codinginterface --alias=codinginterface --password=codinginterface

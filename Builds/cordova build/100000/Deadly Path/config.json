@@ -1,0 +1,116 @@
+{
+	"id": "com.codinginterface.deadlypath",
+	"version": "1.0.0.0",
+	"versionCode": "1000000",
+	"name": "Deadly Path",
+	"description": "Coding interface brings you it's first ever platformer game that is actually pretty easy to play! It includes multiple characters like Baby Dino, Mecha Bot, Santa and Pumpkin Boi. And did we tell you? We have multiple maps too! Including Lethal Forest, Fantastic Arctic, Gloomy Night and Lonely Desert.\nSo get ready to experience this fast paced platformer game, make a high score and challenge your friends.",
+	"whitelist": [
+		"http://*/*",
+		"https://*/*"
+	],
+	"author": "Coding Interface",
+	"email": "codinginterface1@gmail.com",
+	"website": "",
+	"orientation": "landscape",
+	"fullscreen": false,
+	"permissions": [],
+	"icons": [
+		{
+			"src": "www/icons/icon-512.png",
+			"width": 512,
+			"height": 512,
+			"density": "xxxhdpi"
+		},
+		{
+			"src": "www/icons/icon-256.png",
+			"width": 256,
+			"height": 256,
+			"density": null
+		},
+		{
+			"src": "www/icons/icon-128.png",
+			"width": 128,
+			"height": 128,
+			"density": "xhdpi"
+		},
+		{
+			"src": "www/icons/icon-64.png",
+			"width": 64,
+			"height": 64,
+			"density": "mdpi"
+		},
+		{
+			"src": "www/icons/icon-32.png",
+			"width": 32,
+			"height": 32,
+			"density": null
+		},
+		{
+			"src": "www/icons/icon-16.png",
+			"width": 16,
+			"height": 16,
+			"density": null
+		}
+	],
+	"adaptiveIcons": [],
+	"plugins": [
+		{
+			"id": "cordova-plugin-inappbrowser",
+			"version": null,
+			"variables": []
+		},
+		{
+			"id": "cordova-plugin-androidx-socialsharing",
+			"version": "1.0.0",
+			"variables": []
+		},
+		{
+			"id": "construct-mobile-rate",
+			"version": "0.4.0",
+			"variables": []
+		},
+		{
+			"id": "construct-mobile-advert",
+			"version": "1.7.2",
+			"variables": [
+				[
+					"ADMOB_APP_ID",
+					"ca-app-pub-7258648401895773~7634545929"
+				]
+			]
+		},
+		{
+			"id": "cordova-plugin-whitelist",
+			"version": null,
+			"variables": []
+		},
+		{
+			"id": "cordova-plugin-splashscreen",
+			"version": null,
+			"variables": []
+		},
+		{
+			"id": "construct-plugin-file",
+			"version": null,
+			"variables": []
+		},
+		{
+			"id": "cordova-plugin-fullscreen",
+			"version": null,
+			"variables": []
+		}
+	],
+	"android": {
+		"min": "22",
+		"target": "29",
+		"engine": "9.0.0",
+		"plugins": []
+	},
+	"splash": "www/icons/default@2x~universal~anyany.png",
+	"autoHideSplashScreen": false,
+	"iosScheme": "app",
+	"enableAndroidX": false,
+	"enableGooglePlayServices": false,
+	"ios": null,
+	"useragent": null
+}

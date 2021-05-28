@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="construct-mobile-advert" version="1.7.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ConstructAd</name>
+    <hook type="after_prepare" src="hooks/after_prepare.js" />
+
+    <preference name="ADMOB_APP_ID" default="PLACEHOLDER" />
+    <preference name="ADMOB_IOS_APP_ID" default="PLACEHOLDER" />
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ConstructAd">
+                <param name="ios-package" value="ConstructAd" />
+            </feature>
+        </config-file>
+        <config-file target="*-Info.plist" parent="GADApplicationIdentifier">
+            <string>$ADMOB_IOS_APP_ID</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="SKAdNetworkItems">
+            <array>
+                <dict>
+                    <key>SKAdNetworkIdentifier</key>
+                    <string>cstr6suwn9.skadnetwork</string>
+                </dict>
+            </array>
+        </config-file>
+        <config-file target="*-Info.plist" parent="NSUserTrackingUsageDescription">
+            <string>This identifier will be used to deliver personalized ads to you.</string>
+        </config-file>
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2" />
+        <framework src="Google-Mobile-Ads-SDK" type="podspec" spec="7.64.0" />
+        <source-file src="src/ios/ConstructAd.swift" />
+        <source-file src="src/ios/CommandPromise.swift" />
+        <source-file src="src/ios/BannerAdvert.swift" />
+        <source-file src="src/ios/InterstitialAdvert.swift" />
+        <source-file src="src/ios/VideoAdvert.swift" />
+        <source-file src="src/ios/UserConsent.swift" />
+
+        <!-- user consent resources -->
+        <resource-file src="www/consentform.html" />
+        <header-file src="src/ios/ConstructAd-Bridging-Header.h"/>
+        <header-file src="src/ios/PersonalizedAdConsent.h" />
+        <header-file src="src/ios/PACConsentForm.h" />
+        <source-file src="src/ios/PACConsentForm.m" />
+        <header-file src="src/ios/PACError.h" />
+        <source-file src="src/ios/PACError.m" />
+        <header-file src="src/ios/PACPersonalizedAdConsent.h" />
+        <source-file src="src/ios/PACPersonalizedAdConsent.m" />
+        <header-file src="src/ios/PACView.h" />
+        <source-file src="src/ios/PACView.m" />
+    </platform>
+    <platform name="android">
+        <config-file target="res/values/strings.xml" parent="/resources">
+            <string name="admob_app_id">$ADMOB_APP_ID</string>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data
+              android:name="com.google.android.gms.ads.APPLICATION_ID"
+              android:value="@string/admob_app_id" />
+        </config-file>
+        <config-file target="config.xml" parent="/*">
+            <feature name="ConstructAd">
+                <param name="android-package" value="com.scirra.ConstructAd" />
+            </feature>
+        </config-file>
+        <framework src="com.google.android.gms:play-services-ads:+" />
+        <framework src="com.google.android.ads.consent:consent-library:+" />
+        <source-file src="src/android/com/scirra/ConstructAd.java" target-dir="src/com/scirra" />
+        <source-file src="src/android/com/scirra/BannerAdvert.java" target-dir="src/com/scirra" />
+        <source-file src="src/android/com/scirra/InterstitialAdvert.java" target-dir="src/com/scirra" />
+        <source-file src="src/android/com/scirra/VideoAdvert.java" target-dir="src/com/scirra" />
+        <source-file src="src/android/com/scirra/UserConsent.java" target-dir="src/com/scirra" />
+    </platform>
+    <js-module name="ConstructAd" src="www/ConstructAd.js">
+        <clobbers target="cordova.plugins.ConstructAd" />
+    </js-module>
+</plugin>

@@ -1,0 +1,43 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "cordova-plugin-androidx-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "construct-mobile-rate": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "construct-mobile-advert": {
+      "ADMOB_APP_ID": "ca-app-pub-7258648401895773~7634545929",
+      "ADMOB_IOS_APP_ID": "PLACEHOLDER",
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "construct-plugin-file": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.codinginterface.deadlypath"
+    }
+  }
+}
