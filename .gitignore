@@ -3,7 +3,7 @@
 cordova-release-sign.txt
 
 # Directory
-100000/
+Builds/cordova/*
 # construct file and ak files
 #*.c3p
 #*.apk
